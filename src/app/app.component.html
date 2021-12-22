@@ -1,0 +1,60 @@
+<!-- <div class="grid grid-cols-3"> -->
+  <!-- <div></div> -->
+  <div class="flex justify-center">
+  <div class="grid grid-cols-2 gap-4 mt-6 font-mono">
+    <div class="col-span-2 rounded-md h-32 m pt-4 pb-2 px-4 py-4 bg-card">
+      <div class="grid grid-cols-5">
+        <div class="col-span-2">
+          <label for="" class="text-purple-400">Oracle Price</label><br>
+          <h2 class="text-3xl">${{Oracle_price}}</h2>
+          <h5 class="text-lg text-market">+{{day_pro}}%</h5>
+        </div>
+        <div class="col-span-3" style="margin-top: -20px;">
+          <apx-chart
+          [series]="series"
+          [chart]="chart"
+          [dataLabels]="dataLabels"
+          [markers]="markers"
+          
+          [fill]="fill"
+          [yaxis]="yaxis"
+          [xaxis]="xaxis"
+          [tooltip]="tooltip"
+          [autoUpdateSeries]="true"
+        ></apx-chart>
+        <label for="" class="absolute chart-description">30day Trend</label>
+        </div>
+      </div>        
+    </div>
+    <div class="h-32 m pt-4 pb-2 px-4 py-4 bg-card	rounded-md">
+      <label for="" class="text-purple-400">Market Price</label><br>
+          <h2 class="text-2xl">${{Market_price}}</h2>
+          <h5 class="text-lg text-market">{{market_price_pro}}%</h5>
+    </div>
+    <div class="h-32 m pt-4 pb-2 px-4 py-4 bg-card	rounded-md">
+      <label for="" class="text-purple-400">Market Cap</label><br>
+          <h2 class="text-2xl">${{Market_cap}}B</h2>
+          <h5 class="text-lg text-purple-400">Vol:{{market_cap_pro}}M</h5>
+    </div>
+    <div class="h-32 m pt-4 pb-2 px-4 py-4 bg-card	rounded-md">
+      <label for="" class="text-purple-400">Circulation Supply</label><br>
+          <h2 class="text-2xl">${{Circulation_supply}}M</h2>
+          <h5 class="text-lg text-purple-400">HNT</h5>
+    </div>
+    <div class="h-32 m pt-4 pb-2 px-4 py-4 bg-card	rounded-md">
+      <label for="" class="text-purple-400">Max Supply</label><br>
+          <h2 class="text-2xl">${{Max_supply}}M</h2>
+          <h5 class="text-lg text-purple-400">HNT</h5>
+    </div>
+    <div class="h-32 m pt-4 pb-2 px-4 py-4 bg-card	rounded-md">
+      <label for="" class="text-purple-400">Data Credit Price</label><br>
+          <h2 class="text-2xl">${{Data_credit_price}}</h2>
+          <h5 class="text-lg text-purple-400">fixed</h5>
+    </div>
+    <div class="h-32 m pt-4 pb-2 px-4 py-4 bg-card	rounded-md">
+      <label for="" class="text-purple-400">DC Per HNT</label><br>
+          <h2 class="text-2xl">${{Dc_per_HNT}}</h2>        
+    </div>
+  </div>
+  <!-- <div></div> -->
+</div>
